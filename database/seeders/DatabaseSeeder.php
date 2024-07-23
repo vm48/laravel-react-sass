@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
       'email'    => 'vm48@yandex.ru',
       'password' => bcrypt('password'),
     ]);
-    Feature::factory()->create([
+    Feature::create([
       'image'            => 'https://static.tildacdn.com/tild3135-3335-4238-b766-623561633538/plussvg.png',
       'route_name'       => 'feature1.index',
       'name'             => 'Calculate Sum',
@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
       'required_credits' => 1,
       'active'           => true,
     ]);
-    Feature::factory()->create([
+    Feature::create([
       'image'            => 'https://imgpng.ru/d/minus_PNG37.png',
       'route_name'       => 'feature2.index',
       'name'             => 'Calculate Difference',
@@ -37,17 +37,17 @@ class DatabaseSeeder extends Seeder
       'required_credits' => 3,
       'active'           => true,
     ]);
-    Package::factory()->create([
+    Package::create([
       'name'    => 'Basic',
       'price'   => 5,
       'credits' => 20,
     ]);
-    Package::factory()->create([
+    Package::create([
       'name'    => 'Silver',
       'price'   => 20,
       'credits' => 100,
     ]);
-    Package::factory()->create([
+    Package::create([
       'name'    => 'Gold',
       'price'   => 50,
       'credits' => 500,
